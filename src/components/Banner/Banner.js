@@ -4,6 +4,7 @@ import './BannerStyle.css';
 function Banner() {
     return (
         <div className='banner'>
+            <br />
             <h2 className='banner-text'>Fresh</h2>
             <h2 className='banner-year'>2022</h2>
             <h2 className='banner-text'>Look</h2>

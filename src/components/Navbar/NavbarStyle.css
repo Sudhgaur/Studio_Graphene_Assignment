@@ -51,9 +51,12 @@ hr {
 }
 .nav-links {
   display: flex;
-  /* margin-top: 100px; */
   gap: 125px;
   justify-content: space-evenly;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
 }
 .nav-list {
   list-style: none;
@@ -92,16 +95,14 @@ button {
 .hem-links {
   padding: 8px;
   list-style: none;
-}
-
-.hem-links:hover {
+  cursor: pointer;
 }
 
 .productHem-links {
   list-style: none;
 }
 .star-pos {
-  transform: translate(-220px, -215px);
+  transform: translate(-220px, -218px);
 }
 .star {
   position: absolute;
@@ -161,6 +162,9 @@ button {
   }
   .right {
     display: block;
+  }
+  .star-pos {
+    transform: translate(-90px, -206px);
   }
 }
 

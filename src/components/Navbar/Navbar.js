@@ -30,7 +30,6 @@ function Navbar() {
                 <div className='right-items'>
                     <h3>wishlist (0)</h3>
                     <h3>Bag (0)</h3>
-
                 </div>
                 <div className='right' onClick={() => setToggle(!toggle)}>
                     {toggle ? <FaTimes /> : <FaBars />}
@@ -63,19 +62,21 @@ function Navbar() {
             <div className='NavItems'>
                 <ul className='nav-links'>
                     {navbar.map((items) => (
-                        <li className='nav-list'>
-                            {items.name}
-                            {items.child ? <span className="material-icons" onClick={() => setShowProduct(!showProduct)} style={showProduct ? { transform: 'rotate(180deg)' } : {}}>
-                                expand_more
-                            </span> : null}
+                        <a href={`#${items.id}`}>
+                            <li className='nav-list' onClick={() => setShowProduct(!showProduct)}>
+                                {items.name}
+                                {items.child ? <span className="material-icons" style={showProduct ? { transform: 'rotate(180deg)' } : {}}>
+                                    expand_more
+                                </span> : null}
 
-                            {showProduct ? <ul className='product-links'>
-                                {items.child && items.child.map((ele) => (
-                                    <li>{ele.name}</li>
-                                ))}
+                                {showProduct ? <ul className='product-links'>
+                                    {items.child && items.child.map((ele) => (
+                                        <li>{ele.name}</li>
+                                    ))}
 
-                            </ul> : null}
-                        </li>
+                                </ul> : null}
+                            </li>
+                        </a>
                     ))}
 
                 </ul>

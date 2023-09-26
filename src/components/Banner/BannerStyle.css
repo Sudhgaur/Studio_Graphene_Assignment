@@ -44,7 +44,7 @@
   transform: translate(-200px, 480px);
 }
 .star-banner {
-  transform: translate(166px, -242px);
+  transform: translate(166px, -261px);
 }
 .Banner-star {
   position: absolute;
@@ -70,9 +70,19 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  /* .star-banner {
+    transform: translate(140px, -200px);
+    width: 0;
+  } */
+  .rectangle {
+    position: relative;
+    transform: translate(520px, -360px);
+    width: 43%;
+    z-index: 1;
+  }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .banner-text {
     font-size: 50px;
     margin-left: 10%;
@@ -83,10 +93,14 @@
   }
 
   .rectangle {
-    height: 190px;
-    left: 40%;
-    top: 10%;
-    width: 60%;
-    z-index: 1;
+    transform: translate(128px, -249px);
+    height: 206px;
+  }
+  .banner-strightline {
+    transform: translate(-4px, 270px);
+  }
+  .star-banner {
+    transform: translate(124px, -228px);
+    width: 0;
   }
 }

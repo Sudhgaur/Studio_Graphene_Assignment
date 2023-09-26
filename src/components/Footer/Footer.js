@@ -5,11 +5,10 @@ function Footer() {
     const [form, setform] = useState({});
     const [error, setError] = useState([]);
     const validation = () => {
-        if (form.name == '' && form.email == '' && form.message == '') {
+        if (Object.keys(form).length == 0) {
             setError(['name', 'message', 'email']);
             return false;
-        }
-        else if (form.name == '') {
+        } else if (form.name == '') {
             setError([...error, 'name']);
             return false;
         } else if (form.email == '') {
@@ -33,7 +32,7 @@ function Footer() {
     }
     console.log("Error", error, '\n', form)
     return (
-        <div className='footer'>
+        <div className='footer' id='contact'>
             <div className='footer-top'>
                 <div className='footerTop-left'>
                     <h3>Newslleter</h3>
