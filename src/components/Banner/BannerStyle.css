@@ -11,7 +11,7 @@
   color: #fff;
   background-color: rgba(221, 119, 3, 0.955);
   height: 260px;
-  width: 66%;
+  width: 57%;
   z-index: 1;
 }
 .orange-banner {
@@ -44,7 +44,7 @@
   transform: translate(-200px, 480px);
 }
 .star-banner {
-  transform: translate(166px, -261px);
+  transform: translate(71px, -261px);
 }
 .Banner-star {
   position: absolute;
@@ -95,6 +95,7 @@
   .rectangle {
     transform: translate(128px, -249px);
     height: 206px;
+    width: 65.8%;
   }
   .banner-strightline {
     transform: translate(-4px, 270px);

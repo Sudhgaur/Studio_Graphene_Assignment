@@ -14,13 +14,13 @@ function Product() {
 
     const btnPrev = () => {
         let width = box.clientWidth;
-        box.scrollLeft = box.scrollLeft - width - 16;
+        box.scrollLeft = box.scrollLeft - width - 10;
         // console.log(width);
     }
 
     const btnNext = () => {
         let width = box.clientWidth;
-        box.scrollLeft = box.scrollLeft + width + 16;
+        box.scrollLeft = box.scrollLeft + width + 10;
         // console.log(width);
     }
     useEffect(() => {
