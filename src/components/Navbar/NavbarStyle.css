@@ -1,0 +1,189 @@
+.Navbar {
+  background: black;
+  display: block;
+  color: #fff;
+  font-family: "Syne", sans-serif;
+}
+.NavItems {
+  display: flex;
+  background: black;
+  color: #fff;
+  justify-content: center;
+  border-bottom: 1px solid #fff;
+}
+.head-items {
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.left h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.right-items {
+  display: flex;
+  margin-left: auto;
+  font-size: 10px;
+  gap: 10px;
+}
+
+.right-items h3 {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.right {
+  margin-left: auto;
+  font-size: 30px;
+  display: none;
+}
+.toggle-none {
+  display: none;
+}
+
+hr {
+  position: absolute;
+  top: 6.5%;
+  width: 97%;
+  margin-left: 5px;
+}
+.nav-links {
+  display: flex;
+  /* margin-top: 100px; */
+  gap: 125px;
+  justify-content: space-evenly;
+}
+.nav-list {
+  list-style: none;
+}
+
+.material-icons {
+  display: inline-flex;
+}
+
+.product-links {
+  display: flex;
+  flex-direction: column;
+  text-align: initial;
+}
+
+.product-links li {
+  list-style: none;
+  align-items: flex-start;
+}
+
+button {
+  display: none;
+}
+
+.toggle-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hemburger-menu {
+  height: 100vh;
+  margin-top: 22%;
+  font-size: 26px;
+}
+
+.hem-links {
+  padding: 8px;
+  list-style: none;
+}
+
+.hem-links:hover {
+}
+
+.productHem-links {
+  list-style: none;
+}
+.star-pos {
+  transform: translate(-220px, -215px);
+}
+.star {
+  position: absolute;
+  margin: 1em auto;
+  width: 1em;
+  font-size: 12em;
+}
+.star::before {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 7px;
+  height: 8px;
+  transform: rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+}
+.star::after {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 7px;
+  height: 8px;
+  transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+}
+
+@media only screen and (max-width: 1024px) {
+  .NavItems {
+    justify-content: center;
+  }
+  .nav-links {
+    gap: 55px;
+    justify-content: center;
+  }
+
+  .nav-list {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .right-items {
+    display: none;
+  }
+  .NavItems {
+    justify-content: center;
+  }
+  .nav-links {
+    gap: 25px;
+    justify-content: center;
+    display: none;
+  }
+
+  .nav-list {
+    font-size: 20px;
+  }
+  button {
+    display: block;
+  }
+  .right {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .NavItems {
+    justify-content: center;
+  }
+  .nav-links {
+    gap: 35px;
+    justify-content: center;
+  }
+
+  .nav-list {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .NavItems {
+    justify-content: center;
+  }
+  .nav-links {
+    gap: 15px;
+    font-size: 18px;
+  }
+}
