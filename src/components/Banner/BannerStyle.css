@@ -1,17 +1,22 @@
 .banner {
-  background: black;
+  /* background: black;
   margin-top: -62px;
   color: #fff;
-  height: 800%;
+  height: 800%; */
+  width: 100%;
+  height: 749px;
+  top: 129px;
+  border: 1px #ffffff;
+  background-color: black;
 }
 
 .rectangle {
   position: relative;
-  transform: translate(520px, -360px);
+  transform: translate(580px, -490px);
   color: #fff;
-  background-color: rgba(221, 119, 3, 0.955);
-  height: 260px;
-  width: 57%;
+  background-color: #f07e15;
+  height: 360px;
+  width: 61.5%;
   z-index: 1;
 }
 .orange-banner {
@@ -20,37 +25,39 @@
 .banner-text {
   position: relative;
   text-align: start;
-  font-size: 74px;
+  font-size: 135px;
   font-weight: 800;
+  line-height: 102.6px;
   margin-left: 20%;
   z-index: 20;
+  color: #fff;
 }
 
 .banner-year {
+  text-align: start;
+  font-size: 135px;
+  font-weight: 800;
+  line-height: 102.6px;
+  margin-left: 38%;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px;
   position: relative;
-  text-align: start;
-  font-size: 68px;
-  margin-left: 34%;
   z-index: 30;
+  color: #ffffff;
 }
 
 .banner-strightline {
-  height: 1px;
-  width: 80%;
-  color: blue;
-  background-color: #fff;
-  transform: translate(-200px, 480px);
+  position: relative;
+  width: 70%;
+  margin-left: 0;
 }
 .star-banner {
   transform: translate(71px, -261px);
 }
 .Banner-star {
-  position: absolute;
-  margin: 1em auto;
-  width: 1em;
-  font-size: 12em;
+  position: relative;
+  left: 20%;
+  top: -53px;
 }
 .Banner-star::before {
   content: "";
@@ -83,13 +90,35 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .Banner-star {
+    top: 10px;
+    left: 6%;
+  }
+
+  .banner {
+    width: 100%;
+    height: 603px;
+    top: 121px;
+    left: -545px;
+    border: 1px #ffffff;
+    background-color: black;
+  }
   .banner-text {
-    font-size: 50px;
+    font-family: Syne;
+    font-size: 55px;
     margin-left: 10%;
+    line-height: 69.08px;
+    font-weight: 800;
   }
 
   .banner-year {
-    font-size: 40px;
+    font-family: Syne;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 69.08px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    color: #ffffff;
   }
 
   .rectangle {
@@ -98,7 +127,7 @@
     width: 65.8%;
   }
   .banner-strightline {
-    transform: translate(-4px, 270px);
+    transform: translate(-60px, 22px);
   }
   .star-banner {
     transform: translate(124px, -228px);

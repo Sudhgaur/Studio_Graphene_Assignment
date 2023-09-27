@@ -35,7 +35,7 @@ function Footer() {
         <div className='footer' id='contact'>
             <div className='footer-top'>
                 <div className='footerTop-left'>
-                    <h3>Newslleter</h3>
+                    <h3 className='Subtitles'>Newslleter</h3>
                     <p>get news about articles and updates<br />in your mobile</p>
                 </div>
                 <div className='footerTop-right'>
@@ -64,8 +64,8 @@ function Footer() {
 
             <div className='footer-bottom'>
                 <div className='footerBottom-left'>
-                    <p><b>GET</b></p>
-                    <p className='Second-para'> <b>IN TOUCH</b></p>
+                    <h1>GET</h1>
+                    <h1 className='Second-para'>IN TOUCH</h1>
                 </div>
                 <div className='footerBottom-right'>
                     <div className='send-btn' onClick={() => handleSubmit()}>Send</div>

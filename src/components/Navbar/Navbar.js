@@ -56,8 +56,10 @@ function Navbar() {
 
                 </ul>
             </div>
-            <hr />
-            <span className='star star-pos'></span>
+            <div className='line'>
+                <hr />
+                <span className='star star-pos'></span>
+            </div>
 
             <div className='NavItems'>
                 <ul className='nav-links'>

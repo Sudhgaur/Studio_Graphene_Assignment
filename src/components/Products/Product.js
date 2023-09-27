@@ -37,7 +37,7 @@ function Product() {
         <div className='myProducts'>
             <div className='myProducts-top'>
                 <div className='left-myproduct'>
-                    <h1>New Products</h1>
+                    <h2>New Products</h2>
 
                 </div>
 
